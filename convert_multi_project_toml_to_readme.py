@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import tomli
 import re
+import textwrap
 import shutil
 from typing import Any, Dict, List
 
@@ -137,9 +138,22 @@ def generate_markdown(data: Dict[str, Any], filename: str) -> str:
                         lines.append("")
                     
                     # 内容
-                    content = review.get('content', '').strip()
+                    content = review.get('content', '')
                     if content:
-                        content_lines = content.split('\n')
+                        # 去除多余缩进并规范空行
+                        normalized = textwrap.dedent(content).strip()
+                        content_lines = []
+                        prev_blank = False
+                        for raw in normalized.splitlines():
+                            line = raw.lstrip()
+                            if line == '':
+                                if not prev_blank:
+                                    content_lines.append('')
+                                prev_blank = True
+                            else:
+                                content_lines.append(line)
+                                prev_blank = False
+
                         for line in content_lines:
                             lines.append(line)
                         lines.append("")
@@ -168,9 +182,21 @@ def generate_markdown(data: Dict[str, Any], filename: str) -> str:
                             if not isinstance(treview, dict):
                                 continue
                             
-                            content = treview.get('content', '').strip()
+                            content = treview.get('content', '')
                             if content:
-                                content_lines = content.split('\n')
+                                normalized = textwrap.dedent(content).strip()
+                                content_lines = []
+                                prev_blank = False
+                                for raw in normalized.splitlines():
+                                    line = raw.lstrip()
+                                    if line == '':
+                                        if not prev_blank:
+                                            content_lines.append('')
+                                        prev_blank = True
+                                    else:
+                                        content_lines.append(line)
+                                        prev_blank = False
+
                                 for line in content_lines:
                                     lines.append(line)
                                 lines.append("")
@@ -190,19 +216,31 @@ def generate_markdown(data: Dict[str, Any], filename: str) -> str:
         for item in data['misc']:
             if not isinstance(item, dict):
                 continue
-            
+
             topic = item.get('topic', '').strip()
             if topic:
                 lines.append(f"### {topic}")
                 lines.append("")
-            
-            content = item.get('content', '').strip()
+
+            content = item.get('content', '')
             if content:
-                content_lines = content.split('\n')
+                normalized = textwrap.dedent(content).strip()
+                content_lines = []
+                prev_blank = False
+                for raw in normalized.splitlines():
+                    line = raw.lstrip()
+                    if line == '':
+                        if not prev_blank:
+                            content_lines.append('')
+                        prev_blank = True
+                    else:
+                        content_lines.append(line)
+                        prev_blank = False
+
                 for line in content_lines:
                     lines.append(line)
                 lines.append("")
-            
+
             author = item.get('author', {})
             author_str = format_author_markdown(author)
             if author_str:

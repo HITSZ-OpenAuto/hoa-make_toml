@@ -1,0 +1,189 @@
+name: Format and Update README
+
+on:
+  pull_request:
+    paths:
+      - 'readme.toml'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Format readme.toml
+        run: |
+          python3 << 'EOF'
+          import tomli
+          from pathlib import Path
+          
+          # 读取readme.toml
+          toml_file = Path("readme.toml")
+          with open(toml_file, 'rb') as f:
+              data = tomli.load(f)
+          
+          # 格式化并保存
+          formatted = format_toml_content(data)
+          with open(toml_file, 'w', encoding='utf-8') as f:
+              f.write(formatted)
+          
+          print("✓ readme.toml 已格式化")
+          
+          def format_toml_content(data):
+              """格式化multi-project TOML内容"""
+              lines = []
+              
+              # 基本字段顺序
+              field_order = ['course_code', 'repo_type', 'course_name', 'category', 'description']
+              
+              # 写入基本字段
+              for field in field_order:
+                  if field in data:
+                      value = data[field]
+                      if isinstance(value, str):
+                          if '\n' in value or len(value) > 50:
+                              escaped = value.replace('\', '\\')
+                              lines.append(f'{field} = """\n{escaped}\n"""')
+                          else:
+                              escaped = value.replace('\', '\\').replace('"', '\\"')
+                              lines.append(f'{field} = "{escaped}"')
+              
+              # 处理courses数组
+              if 'courses' in data and data['courses']:
+                  lines.append('')
+                  for course in data['courses']:
+                      if isinstance(course, dict):
+                          lines.append('[[courses]]')
+                          for k, v in course.items():
+                              if isinstance(v, str):
+                                  escaped = v.replace('\', '\\').replace('"', '\\"')
+                                  lines.append(f'{k} = "{escaped}"')
+                              elif k == 'teachers' and isinstance(v, list):
+                                  lines.append(f'{k} = [')
+                                  for teacher in v:
+                                      if isinstance(teacher, dict):
+                                          lines.append('  {')
+                                          for tk, tv in teacher.items():
+                                              if tk == 'reviews' and isinstance(tv, list):
+                                                  lines.append('    reviews = [')
+                                                  for review in tv:
+                                                      if isinstance(review, dict):
+                                                          lines.append('      {')
+                                                          for rk, rv in review.items():
+                                                              if isinstance(rv, str):
+                                                                  escaped = rv.replace('\', '\\').replace('"', '\\"')
+                                                                  lines.append(f'        {rk} = "{escaped}"')
+                                                          lines.append('      }')
+                                                  lines.append('    ]')
+                                              elif isinstance(tv, str):
+                                                  escaped = tv.replace('\', '\\').replace('"', '\\"')
+                                                  lines.append(f'    {tk} = "{escaped}"')
+                                          lines.append('  }')
+                                  lines.append(']')
+              
+              return '\n'.join(lines)
+          
+          EOF
+          
+      - name: Update README.md
+        run: |
+          python3 << 'EOF'
+          import tomli
+          from pathlib import Path
+          
+          # 读取readme.toml
+          with open('readme.toml', 'rb') as f:
+              data = tomli.load(f)
+          
+          # 生成markdown内容
+          markdown = generate_markdown(data)
+          
+          # 写入README.md
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(markdown)
+          
+          print("✓ README.md 已更新")
+          
+          def generate_markdown(data):
+              """从multi-project TOML生成Markdown"""
+              lines = []
+              
+              # 标题 (使用course_name)
+              if 'course_name' in data:
+                  lines.append(f"# {data['course_name']}")
+                  lines.append("")
+              
+              # 描述
+              if 'description' in data and data['description']:
+                  lines.append(data['description'])
+                  lines.append("")
+              
+              # 课程列表
+              if 'courses' in data and data['courses']:
+                  for course in data['courses']:
+                      if isinstance(course, dict):
+                          if 'name' in course:
+                              lines.append(f"## {course['name']}")
+                              lines.append("")
+                          
+                          if 'teachers' in course and course['teachers']:
+                              lines.append("### 课程评价")
+                              lines.append("")
+                              teachers = course['teachers']
+                              if not isinstance(teachers, list):
+                                  teachers = [teachers]
+                              for teacher in teachers:
+                                  if isinstance(teacher, dict):
+                                      if 'reviews' in teacher and teacher['reviews']:
+                                          for review in teacher['reviews']:
+                                              if isinstance(review, dict):
+                                                  if 'content' in review:
+                                                      lines.append(review['content'])
+                                                      lines.append("")
+                                                  if 'author' in review:
+                                                      author_str = format_author(review['author'])
+                                                      if author_str:
+                                                          lines.append(f"> {author_str}")
+                                                          lines.append("")
+              
+              return '\n'.join(lines)
+          
+          def format_author(author):
+              """格式化作者信息"""
+              if not isinstance(author, dict):
+                  return ""
+              name = author.get('name', '')
+              link = author.get('link', '')
+              year = author.get('year', '')
+              
+              if link:
+                  author_str = f"文 / [{name}]({link})"
+              else:
+                  author_str = f"文 / {name}"
+              
+              if year:
+                  author_str += f", {year}"
+              
+              return author_str
+          
+          EOF
+          
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add readme.toml README.md
+          git commit -m "ci: Format readme.toml and update README.md" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

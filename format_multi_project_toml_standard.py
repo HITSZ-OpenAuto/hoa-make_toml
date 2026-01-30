@@ -115,13 +115,16 @@ def format_toml_content(data: Dict[str, Any]) -> str:
                     
                     if 'content' in review:
                         content = review['content']
-                        content_lines = content.strip().split('\n')
-                        if len(content_lines) == 1:
-                            lines.append(f'  content = """{content}"""')
+                        import textwrap
+                        normalized = textwrap.dedent(content).strip()
+                        content_lines = normalized.split('\n')
+                        if len(content_lines) == 1 and content_lines[0]:
+                            lines.append('  content = """' + content_lines[0] + '"""')
                         else:
                             lines.append('  content = """')
                             for line in content_lines:
-                                lines.append(f'  {line}')
+                                clean_line = line.lstrip()
+                                lines.append('  ' + clean_line)
                             lines.append('  """')
                     
                     author = review.get('author', {})
@@ -150,13 +153,16 @@ def format_toml_content(data: Dict[str, Any]) -> str:
                             
                             if 'content' in treview:
                                 content = treview['content']
-                                content_lines = content.strip().split('\n')
-                                if len(content_lines) == 1:
-                                    lines.append(f'    content = """{content}"""')
+                                import textwrap
+                                normalized = textwrap.dedent(content).strip()
+                                content_lines = normalized.split('\n')
+                                if len(content_lines) == 1 and content_lines[0]:
+                                    lines.append('    content = """' + content_lines[0] + '"""')
                                 else:
                                     lines.append('    content = """')
                                     for line in content_lines:
-                                        lines.append(f'    {line}')
+                                        clean_line = line.lstrip()
+                                        lines.append('    ' + clean_line)
                                     lines.append('    """')
                             
                             author = treview.get('author', {})
@@ -177,13 +183,16 @@ def format_toml_content(data: Dict[str, Any]) -> str:
                 lines.append(f'topic = "{escape_toml_string(item["topic"])}"')
             if 'content' in item:
                 content = item['content']
-                content_lines = content.strip().split('\n')
-                if len(content_lines) == 1:
-                    lines.append(f'content = """{content}"""')
+                import textwrap
+                normalized = textwrap.dedent(content).strip()
+                content_lines = normalized.split('\n')
+                if len(content_lines) == 1 and content_lines[0]:
+                    lines.append('content = """' + content_lines[0] + '"""')
                 else:
                     lines.append('content = """')
                     for line in content_lines:
-                        lines.append(line)
+                        clean_line = line.lstrip()
+                        lines.append(clean_line)
                     lines.append('"""')
             author = item.get('author', {})
             author_str = format_author(author)
