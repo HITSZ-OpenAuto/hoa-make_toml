@@ -2,8 +2,6 @@
 
 **课程代码:** EE1013
 
-## 课程描述
-
 注意，电路与电子技术实验（EE1014）是独立设课。
 2024年春季起开设的缝合课程，计算机与电子通信、自动化与电气工程、机器人与智能装备大类均开设。
 2025 年春季学期改名为电路与电子学II，机器人与智能装备、空天科技、智慧能源与低空动力大类开设。
@@ -12,6 +10,61 @@
 - [电路IA]([https://hoa.moe/docs/fresh-spring/ee1011a/](https://hoa.moe/docs/fresh-spring/ee1011a/))
 - [模拟电子技术基础]([https://hoa.moe/docs/sophomore-spring/ee1007/](https://hoa.moe/docs/sophomore-spring/ee1007/))
 - [数字电子技术基础]([https://hoa.moe/docs/sophomore-spring/ee1009/](https://hoa.moe/docs/sophomore-spring/ee1009/))
+
+## 授课教师
+
+### 詹瀚林
+
+### 吴婷
+
+### 朱荣伍
+
+### 孙丽
+
+### 谷雨
+
+### 梁亮
+
+### 王灿
+
+### 潘学伟
+
+### 喻锦程
+
+### 王毅
+
+### 王立欣
+
+### 张瑞宏
+
+### 和军平
+
+### 梁仲明
+
+## 教材与参考书
+
+**电路IA**
+作者：参考资料
+
+**模拟电子技术基础**
+作者：参考资料
+
+**数字电子技术基础**
+作者：参考资料
+
+## 在线资源
+
+- [电路 哈工大 - Bilibili]([https://www.bilibili.com/video/BV19x411x7We/?spm_id_from=333.337.search-card.all.click](https://www.bilibili.com/video/BV19x411x7We/?spm_id_from=333.337.search-card.all.click))
+  网课推荐
+
+- [模拟电子技术基础 上海交通大学 郑益慧主讲 - Bilibili]([https://www.bilibili.com/video/BV1Gt411b7Zq](https://www.bilibili.com/video/BV1Gt411b7Zq))
+  网课推荐
+
+- [模拟电子技术基础 清华大学 华成英主讲 - Bilibili]([https://www.bilibili.com/video/BV1M7411b7Wb](https://www.bilibili.com/video/BV1M7411b7Wb))
+  网课推荐
+
+- [数字电子技术基础 清华大学 王红主讲 - Bilibili]([https://www.bilibili.com/video/BV18p411Z7ce](https://www.bilibili.com/video/BV18p411Z7ce))
+  网课推荐。建议正常听课时关闭弹幕，有任何不懂的地方才打开，看看弹幕里的解答。
 
 ## 考试
 
@@ -40,13 +93,9 @@ F[电路8-9、12章]
 ```
 方框中为选学内容（在预习的有限时间里优先级较低），圆框中为必学内容；标有双箭头的框之间可同步学习，标有单箭头的框之间有承接关系。
 
-> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515)), 2024.3
-
 电路部分学有余力建议自学频率响应（第七章）和暂态电路（第八、九章）的内容，在模电部分对这部分知识有要求但是电路部分学时没有安排。
 电路和数电总体按体系讲解，可以跟着教学计划学习，学有余力可以自学跳过的内容。
 模电授课内容较为零碎，建议跟着上交大 zzy 或者清华 hcy 对模电整本书进行初步的学习，至少对分立元件搭成的放大电路有一点基本的认知。
-
-> 文 / [Gaster]([https://github.com/WDGaster703](https://github.com/WDGaster703)), 2024.12
 
 ## 课程安排
 
@@ -301,7 +350,7 @@ F[电路8-9、12章]
 </tr>
 </table>
 
-## 其他
+## 其他信息
 
 ### 2024 年春季学期的授课老师
 

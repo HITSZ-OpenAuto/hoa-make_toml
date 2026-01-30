@@ -97,46 +97,6 @@ def parse_toml_file(toml_path: str) -> Dict[str, Any]:
             return {}
 
 
-def process_content_items(items, title: str) -> List[str]:
-    """处理内容项列表（支持新旧两种格式）"""
-    lines = []
-    
-    if not items:
-        return lines
-    
-    lines.append(f"## {title}")
-    lines.append("")
-    
-    # 处理两种格式
-    if isinstance(items, str):
-        # 单字符串格式
-        lines.append(items.strip())
-        lines.append("")
-    elif isinstance(items, list):
-        # 数组格式
-        for item in items:
-            if isinstance(item, dict):
-                if 'content' in item:
-                    content = item['content'].strip()
-                    content_lines = content.split('\n')
-                    for line in content_lines:
-                        lines.append(line)
-                    lines.append("")
-                
-                author = item.get('author', {})
-                author_str = format_author_markdown(author)
-                if author_str:
-                    lines.append(f"> {author_str}")
-                    lines.append("")
-            elif isinstance(item, str):
-                # item 本身可能是字符串
-                lines.append(item.strip())
-                lines.append("")
-    
-    lines.append("")
-    return lines
-
-
 def generate_markdown(data: Dict[str, Any], filename: str) -> str:
     """将 TOML 数据转换为 Markdown"""
     lines = []
@@ -151,86 +111,265 @@ def generate_markdown(data: Dict[str, Any], filename: str) -> str:
         lines.append(f"**课程代码:** {data['course_code']}")
         lines.append("")
     
-    # Description
+    # Description（全局介绍）
     if 'description' in data and data['description']:
-        lines.extend(process_content_items(data['description'], "课程描述"))
+        desc = data['description']
+        if isinstance(desc, str):
+            lines.append(desc.strip())
+            lines.append("")
     
-    # Homework
+    # Lecturers（授课教师）
+    if 'lecturers' in data and data['lecturers']:
+        lines.append("## 授课教师")
+        lines.append("")
+        lecturers = data['lecturers']
+        if isinstance(lecturers, list):
+            for lecturer in lecturers:
+                if isinstance(lecturer, dict) and 'name' in lecturer:
+                    lines.append(f"### {lecturer['name']}")
+                    lines.append("")
+                    
+                    # 教师的reviews
+                    if 'reviews' in lecturer and lecturer['reviews']:
+                        for review in lecturer['reviews']:
+                            if isinstance(review, dict):
+                                content = review.get('content', '').strip()
+                                if content:
+                                    content_lines = content.split('\n')
+                                    for line in content_lines:
+                                        lines.append(line)
+                                    lines.append("")
+                                
+                                author = review.get('author', {})
+                                author_str = format_author_markdown(author)
+                                if author_str:
+                                    lines.append(f"> {author_str}")
+                                    lines.append("")
+        lines.append("")
+    
+    # Textbooks（教材与参考书）
+    if 'textbooks' in data and data['textbooks']:
+        lines.append("## 教材与参考书")
+        lines.append("")
+        textbooks = data['textbooks']
+        if isinstance(textbooks, list):
+            for book in textbooks:
+                if isinstance(book, dict):
+                    title = book.get('title', '')
+                    book_author = book.get('book_author', '')
+                    publisher = book.get('publisher', '')
+                    edition = book.get('edition', '')
+                    
+                    if title:
+                        lines.append(f"**{title}**")
+                    details = []
+                    if book_author:
+                        details.append(f"作者：{book_author}")
+                    if publisher:
+                        details.append(f"出版社：{publisher}")
+                    if edition:
+                        details.append(f"版本：{edition}")
+                    if details:
+                        lines.append(" | ".join(details))
+                    lines.append("")
+        lines.append("")
+    
+    # Online Resources（在线资源）
+    if 'online_resources' in data and data['online_resources']:
+        lines.append("## 在线资源")
+        lines.append("")
+        resources = data['online_resources']
+        if isinstance(resources, list):
+            for resource in resources:
+                if isinstance(resource, dict):
+                    title = resource.get('title', '')
+                    url = resource.get('url', '')
+                    description = resource.get('description', '')
+                    
+                    if url:
+                        lines.append(f"- [{title}]({url})")
+                    else:
+                        lines.append(f"- {title}")
+                    
+                    if description:
+                        lines.append(f"  {description}")
+                    lines.append("")
+        lines.append("")
+    
+    # Course（课程评价）
+    if 'course' in data and data['course']:
+        lines.append("## 课程评价")
+        lines.append("")
+        course_items = data['course']
+        if isinstance(course_items, list):
+            for item in course_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
+                    
+                    author = item.get('author', {})
+                    author_str = format_author_markdown(author)
+                    if author_str:
+                        lines.append(f"> {author_str}")
+                        lines.append("")
+        lines.append("")
+    
+    # Homework（作业）
     if 'homework' in data and data['homework']:
-        lines.extend(process_content_items(data['homework'], "作业"))
+        lines.append("## 作业")
+        lines.append("")
+        homework_items = data['homework']
+        if isinstance(homework_items, list):
+            for item in homework_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
+                    
+                    author = item.get('author', {})
+                    author_str = format_author_markdown(author)
+                    if author_str:
+                        lines.append(f"> {author_str}")
+                        lines.append("")
+        lines.append("")
     
-    # Exam
+    # Exam（考试）
     if 'exam' in data and data['exam']:
-        lines.extend(process_content_items(data['exam'], "考试"))
+        lines.append("## 考试")
+        lines.append("")
+        exam_items = data['exam']
+        if isinstance(exam_items, list):
+            for item in exam_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
+                    
+                    author = item.get('author', {})
+                    author_str = format_author_markdown(author)
+                    if author_str:
+                        lines.append(f"> {author_str}")
+                        lines.append("")
+        lines.append("")
     
-    # Lab
+    # Lab（实验）
     if 'lab' in data and data['lab']:
-        lines.extend(process_content_items(data['lab'], "实验"))
+        lines.append("## 实验")
+        lines.append("")
+        lab_items = data['lab']
+        if isinstance(lab_items, list):
+            for item in lab_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
+                    
+                    author = item.get('author', {})
+                    author_str = format_author_markdown(author)
+                    if author_str:
+                        lines.append(f"> {author_str}")
+                        lines.append("")
+        lines.append("")
     
-    # Advice
+    # Advice（建议）
     if 'advice' in data and data['advice']:
-        lines.extend(process_content_items(data['advice'], "建议"))
+        lines.append("## 建议")
+        lines.append("")
+        advice_items = data['advice']
+        if isinstance(advice_items, list):
+            for item in advice_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
+        lines.append("")
     
-    # Schedule
+    # Schedule（课程安排）
     if 'schedule' in data and data['schedule']:
         lines.append("## 课程安排")
         lines.append("")
-        for item in data['schedule']:
-            if 'content' in item:
-                content = item['content'].strip()
-                # 直接输出内容（可能是表格、代码块或纯文本）
-                lines.append(content)
-                lines.append("")
+        schedule_items = data['schedule']
+        if isinstance(schedule_items, list):
+            for item in schedule_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
         lines.append("")
     
-    # Related Links
+    # Related Links（相关链接）
     if 'related_links' in data and data['related_links']:
         lines.append("## 相关链接")
         lines.append("")
-        for item in data['related_links']:
-            if 'content' in item:
-                content = item['content'].strip()
-                # 直接输出内容（可能是链接列表或其他格式）
-                lines.append(content)
-                lines.append("")
+        links_items = data['related_links']
+        if isinstance(links_items, list):
+            for item in links_items:
+                if isinstance(item, dict):
+                    content = item.get('content', '').strip()
+                    if content:
+                        if content.startswith('http'):
+                            lines.append(f"- [{content}]({content})")
+                        else:
+                            lines.append(f"- {content}")
+                        lines.append("")
         lines.append("")
     
-    # Misc
+    # Misc（杂项）
     if 'misc' in data and data['misc']:
-        lines.append("## 其他")
+        lines.append("## 其他信息")
         lines.append("")
-        for item in data['misc']:
-            topic = item.get('topic', '')
-            content = item.get('content', '')
-            
-            if topic:
-                lines.append(f"### {topic}")
-                lines.append("")
-            
-            if content:
-                content = content.strip()
-                content_lines = content.split('\n')
-                for line in content_lines:
-                    lines.append(line)
-                lines.append("")
-            
-            author = item.get('author', {})
-            author_str = format_author_markdown(author)
-            if author_str:
-                lines.append(f"> {author_str}")
-                lines.append("")
+        misc_items = data['misc']
+        if isinstance(misc_items, list):
+            for item in misc_items:
+                if isinstance(item, dict):
+                    topic = item.get('topic', '').strip()
+                    if topic:
+                        lines.append(f"### {topic}")
+                        lines.append("")
+                    
+                    content = item.get('content', '').strip()
+                    if content:
+                        content_lines = content.split('\n')
+                        for line in content_lines:
+                            lines.append(line)
+                        lines.append("")
+                    
+                    author = item.get('author', {})
+                    author_str = format_author_markdown(author)
+                    if author_str:
+                        lines.append(f"> {author_str}")
+                        lines.append("")
         lines.append("")
     
-    # 移除末尾多余空行
+    # 清理末尾多余空行
     while lines and lines[-1] == '':
         lines.pop()
-
+    
     s = '\n'.join(lines) + '\n'
     
     # 将裸 URL 转为 Markdown 链接
     s = re.sub(r"(?P<url>https?://[^\s\)\]\">]+)", lambda m: f"[{m.group('url')}]({m.group('url')})", s)
     
-    # Collapse multiple blank lines to at most one
+    # 合并多个空行为最多一个
     s = re.sub(r'\n{3,}', '\n\n', s)
     return s
 

@@ -2,6 +2,10 @@
 
 **课程代码:** COMP3028
 
+## 授课教师
+
+### Joanna Siebert
+
 ## 考试
 
 形式：Open book 开卷
@@ -12,4 +16,4 @@
 
 ## 相关链接
 
-[https://github.com/xuanhao44/Software-Architecture](https://github.com/xuanhao44/Software-Architecture)
+- [[https://github.com/xuanhao44/Software-Architecture](https://github.com/xuanhao44/Software-Architecture)]([https://github.com/xuanhao44/Software-Architecture](https://github.com/xuanhao44/Software-Architecture))

@@ -2,6 +2,39 @@
 
 **课程代码:** EMEC1002
 
+## 授课教师
+
+### 梁旭东
+
+授课风格：PPT 和例题讲解。例题中有有往年的考试题。
+              听课建议：讲解到位，值得一听。
+
+> 文 / [Maxwell Jay]([https://github.com/MaxwellJay256](https://github.com/MaxwellJay256))
+
+### 潘泽华、牛牧青
+
+分别负责静力学&运动学（至速度瞬心法）/ 运动学剩余部分&动力学。
+              授课风格：干货满满，思路清晰，很赞。
+              听课建议：认真听讲。课上要跟上，课下动笔再算一遍。
+              2025 秋，牛牧青老师将独立负责整门课程，而潘泽华老师将与凌超老师合作。
+
+> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515))
+
+### 凡友华
+
+授课风格：PPT 和例题讲解，有板书。听起来很困。
+              几乎每节课都考勤。考勤形式是，PPT 上给出题目，让大家自备纸张作答，下课时上交。但是 2024 秋并没有限制上交的时间为下课，也即允许补交。
+
+> 文 / [IcyDesert]([https://github.com/IcyDesert](https://github.com/IcyDesert))
+
+## 在线资源
+
+- [理论力学（本部出品课程）]([https://www.bilibili.com/video/BV1Gg41197GP](https://www.bilibili.com/video/BV1Gg41197GP))
+  静力学部分讲的不错，但运动学和动力学的老师念 PPT，听着可能很难受。
+
+- [平面简单桁架中零力杆的判断]([https://hoa.moe/blog/zero-force-poles](https://hoa.moe/blog/zero-force-poles))
+  相关博客文章
+
 ## 考试
 
 2024 年开始，理论力学的教学与 HIT 本部同步，一方面加入了期中考试，另一方面期末考试题由本部出题。
@@ -38,12 +71,6 @@
 
 不仅要看懂理论，更要动笔实战。不要只看答案，这样容易高估自己的水平。
 
-> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515))
-
 习题指导上有部分答案错误，遇到时请大胆怀疑，积极讨论。
 
-> 文 / [psp_dada]([https://github.com/pspdada](https://github.com/pspdada)), 2024.7
-
 如果课后题有不懂之处，可以在B站搜索`理论力学哈工大第九版第x章课后题`，有不少讲题视频，质量还可以。
-
-> 文 / [IcyDesert]([https://github.com/IcyDesert](https://github.com/IcyDesert)), 2024.12

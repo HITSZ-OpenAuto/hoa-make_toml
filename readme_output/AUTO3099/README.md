@@ -2,6 +2,14 @@
 
 **课程代码:** AUTO3099
 
+## 在线资源
+
+- [LaTeX 论文模板 (hitszthesis)]([https://github.com/YangLaTeX/hitszthesis](https://github.com/YangLaTeX/hitszthesis))
+  感谢 YangLaTeX 维护的模版。21 级有同学用 LaTeX 完成毕业论文全文。
+
+- [LaTeX 幻灯片模版 (hitszbeamer)]([https://github.com/YangLaTeX/hitszbeamer](https://github.com/YangLaTeX/hitszbeamer))
+  感谢 YangLaTeX 维护的模版。
+
 ## 课程安排
 
 **大致时间节点 (以 21 级为例)**
@@ -33,7 +41,7 @@
   - 答辩后按照老师的要求修改后，即上传最终版论文，审核通过后打印胶装版（论文封面到时可在系统下载）存档。
   - 优秀毕业设计的评选流程：每个组推出两名同学，这样总共会有 20 多位同学。然后选出 11 位同学进决赛圈，这几位同学需要经过答辩（21 级改为函评），最后出 7 位同学。
 
-## 其他
+## 其他信息
 
 ### 论文格式 FAQ
 

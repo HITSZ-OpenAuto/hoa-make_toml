@@ -2,11 +2,53 @@
 
 **课程代码:** COMP2014
 
-## 课程描述
-
 本课程为考查课，学分 2 分，属于拓展选修课。
 实验任务较重且有考勤，严禁抄袭。
 课程教学标准较旧（部分题目在新标准下无解），建议自学 Modern C++。
+
+## 授课教师
+
+### 王焦乐
+
+授课风格：PPT + 课堂上使用 VSCode 演示代码。
+              听课建议：由于课后会发PPT，因此只需在课后按照PPT中的内容上网搜索相关资料即可。
+              老师语录：“C++ 本是一个工具，你为什么要像准备一门考试一样地学习它呢？”
+
+> 文 / 匿名, 2023.11
+
+## 在线资源
+
+- [Cherno 的 cpp 系列]([https://www.youtube.com/@TheCherno](https://www.youtube.com/@TheCherno))
+  Youtube 优质 C++ 入门教程
+
+- [Cherno CPP 笔记]([https://github.com/Nagi-ovo/Cherno-CPP-Notes](https://github.com/Nagi-ovo/Cherno-CPP-Notes))
+  GitHub 上的 Cherno 课程配套笔记
+
+- [微软官方 Modern CPP 教程]([https://learn.microsoft.com/zh-cn/cpp/cpp/welcome-back-to-cpp-modern-cpp](https://learn.microsoft.com/zh-cn/cpp/cpp/welcome-back-to-cpp-modern-cpp))
+  权威的 Modern C++ 查阅文档
+
+- [现代 C++ 教程：高速上手 C++ 11/14/17/20]([https://changkun.de/modern-cpp/zh-cn/00-preface/](https://changkun.de/modern-cpp/zh-cn/00-preface/))
+  系统学习现代 C++ 特性的开源书籍
+
+- [cppreference]([https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5](https://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5))
+  C++ 标准库参考手册（硬核查询用）
+
+- [mq白]([https://github.com/Mq-b](https://github.com/Mq-b))
+  优质 C++ 学习资源博主
+
+## 课程评价
+
+本课程是机械类、自动化类及相关专业的专业选修课，可用于数据处理、数值计算和系统程序设计等领域。通过本课程的学习，使学生系统地掌握面向对象设计的思维方式、基本概念与基本方法，达到熟练运用 C++ 语言进行面向对象程序设计、解决实际应用问题的目的。
+
+课程主要内容包括：
+1. C++ 语言相比于 C 语言的新特征；
+2. 介绍容器与算法的概念与应用；
+3. 类与数据抽象的概念与使用方法；
+4. 介绍模板与泛型编程；
+5. C++ 编程规范；
+6. 开发 Windows 应用程序的方法与技巧。
+
+> 文 / 教学大纲
 
 ## 考试
 
@@ -48,18 +90,14 @@
 
 最后，多看看别人的优质代码，同样的功能，别人是怎么优雅实现的，如此这般你的代码水平才会有所提升。
 
-> 文 / [longlin li]([https://github.com/longlin10086](https://github.com/longlin10086)), 2023.11
-
 与 [高级语言程序设计]([https://github.com/HITSZ-OpenAuto/COMP2021](https://github.com/HITSZ-OpenAuto/COMP2021)) 一样，作为一门编程语言，你本不应该像学习数学或者历史一样，用死磕书本和题目的方法学习 C++。
 
 然而既然你选择了它，就不得不面对考试。但这是考查课 + 选修课，所以你其实没有那么多需要瞻前顾后的事情，尽管按照自己喜欢的方式学习 `C++` 吧。
 
 说得夸张点，大家已经在自动化专业摸爬滚打一年了，玩「**技术流**」的学生根本不可能惧怕这门课。
 
-> 文 / [Maxwell Jay]([https://github.com/MaxwellJay256](https://github.com/MaxwellJay256)), 2023.11
-
 ## 相关链接
 
-longlin 的 cpp 实验仓库: [https://github.com/longlin10086/HITSZ-cppLab](https://github.com/longlin10086/HITSZ-cppLab)
+- longlin 的 cpp 实验仓库: [https://github.com/longlin10086/HITSZ-cppLab](https://github.com/longlin10086/HITSZ-cppLab)
 
-Maxwell Jay/CppLab_2023: [https://github.com/MaxwellJay256/CppLab_2023](https://github.com/MaxwellJay256/CppLab_2023)
+- Maxwell Jay/CppLab_2023: [https://github.com/MaxwellJay256/CppLab_2023](https://github.com/MaxwellJay256/CppLab_2023)

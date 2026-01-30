@@ -2,13 +2,39 @@
 
 **课程代码:** PHYS1002
 
-## 课程描述
-
 自 2024.03.20 开始，由于大物实验每年安排的不确定性，原 **大学物理实验 IA (PHYS1002A)** 与 **大学物理实验 IB (PHYS1002B)** 仓库现采用统一的命名方式，合并成 **大学物理实验 (PHYS1002)** 页面。
 
 本学期不再采用的实验资料转移至 `archived` 文件夹。
 
-## 其他
+## 授课教师
+
+### 实验中心全体教师
+
+大一春季学期开学后会安排绪论课（24级为2学时），介绍基本内容、数据处理和报告要求。
+              绪论课作业算作一次实验计入最终成绩，请务必重视。
+
+> 文 / [Gaster]([https://github.com/WDGaster703](https://github.com/WDGaster703)), 2025.3
+
+## 教材与参考书
+
+**大学物理实验指导书**
+作者：实验中心
+
+## 在线资源
+
+- [HITSZ-PhTyp (Typst 模板)]([https://github.com/longlin10086/HITSZ-PhTyp](https://github.com/longlin10086/HITSZ-PhTyp))
+  一个大物实验报告的 Typst 模板。
+
+- [Doctxing/phytex (LaTeX 模板)]([https://github.com/Doctxing/phytex](https://github.com/Doctxing/phytex))
+  Doctxing 同学制作的 LaTeX 模板及数据处理程序。
+
+- [LittleYe233/hitsz-physics-ib-reports]([https://github.com/LittleYe233/hitsz-physics-ib-reports](https://github.com/LittleYe233/hitsz-physics-ib-reports))
+  个人实验报告仓库收集（已授权）。
+
+- [Zjl37/phys1006-workspace]([https://github.com/Zjl37/phys1006-workspace](https://github.com/Zjl37/phys1006-workspace))
+  动量子的大物实验工作区，含有实验报告的 Typst 模板和一些数据处理程序。
+
+## 其他信息
 
 ### 新人须知：绪论课与学时要求
 

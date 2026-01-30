@@ -2,9 +2,88 @@
 
 **课程代码:** AUTO1001
 
-## 课程描述
-
 本课程开设自 2022 年，合并了过去工程制图基础、自动化专业导论、机器人设计与实践、机械设计基础 4 门课程。
+
+## 授课教师
+
+### 楼云江
+
+### 袁晗
+
+### 杨月
+
+### 黄瑞宁
+
+### 陈浩耀
+
+### 熊昊
+
+### 熊小刚
+
+### 葛亚明
+
+## 课程评价
+
+此为 2021 级内容。新的导论部分对原来内容有了较大程度的裁剪，但是仍然建议有兴趣的同学仔细阅读有关“自动化基本原理”的内容，对自动控制系统的思想、构成、实现方式有个初步认识。
+课件放在校内网盘。
+
+主要内容：
+
+- 自动化的概念与发展简史
+- 自动化基本原理（这部分原来由吴爱国教授负责讲授），包括：
+  - 两类自动控制：开环与闭环
+  - 自动控制的定性描述（方框图等）与定量描述（数学模型，如传递函数）
+    - 建立控制对象的数学模型是自动化专业的核心知识
+  - 自动控制系统的基本要求——稳、快、准，及描述方式
+  - 自动控制系统的控制方式（前馈、反馈、串级、多回路……）
+  - PID 控制律，PID 各环节的作用
+  - 反馈的重要性，关注**不确定性**等概念，自动化与控制的关系
+- 现代自动化初览（科普）
+- 自动化专业培养目标、课程体系、学术体系、发展前景
+
+> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515))
+
+删减后的导论部分授课内容如下。23 级由于和《系统与控制》同时授课，因此 Oliver Wu 所说的对自动控制系统的思想、构成、实现方式的认识可以交给专业课完成。
+
+- 自动化的概念和发展简史（3 学时）
+- 自动化基本原理（4 学时）
+  - 开环和闭环控制
+  - 自动控制系统的基本要求（快准稳）
+  - 自动控制系统的控制方式（前馈、反馈、串级、多回路）
+- 自动化专业的培养目标、课程体系、学术体系、发展前景（1 学时）
+
+> 文 / [Gaster]([https://github.com/WDGaster703](https://github.com/WDGaster703)), 2025.6
+
+工程制图（共 16 学时）主要内容：
+
+- 制图的基本知识（2 学时）
+- 点线面体的投影（4 学时）
+- 组合体（3 学时）
+- 机件的表达（1 学时）
+- Solidworks 的使用（6 学时）
+
+机械设计原理（共 2 学时）主要内容：
+
+- 机构的组成，机构自由度计算（重点）
+- 平面连杆结构，有曲柄条件，压力角，死点位置
+- 齿轮机构及渐开线齿轮相关计算
+
+> 文 / [Gaster]([https://github.com/WDGaster703](https://github.com/WDGaster703)), 2025.6
+
+主要内容：
+
+- 电学基本知识（电路基础）（2 学时）
+- 直流电机驱动基本知识（重点关注 H 桥）（2 学时）
+- 实验中会用到的各种模块（如超声波传感模块等）的用法（2 学时）
+- Arduino 编程入门（4 学时）
+  - 基本 I/O（Input 输入、Output 输出）、串口
+  - 延时函数、中断（采集编码器信号等）
+  - 其他外围设备编程
+  - 参考网站：[https://www.arduino.cc/reference/en/](https://www.arduino.cc/reference/en/)
+- PID 控制律作用于实际系统，每个环节的作用（2 学时）
+- 轮式机器人基本运动学（2 学时）
+
+> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515))
 
 ## 考试
 
@@ -100,21 +179,19 @@
 
 希望同学们在实验过程中养成良好的习惯，爱护实验器材，维护好实验室的环境。
 
-> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515))
-
 ## 相关链接
 
-Maxwell Jay - mega_12800: [https://github.com/MaxwellJay256/mega_12800](https://github.com/MaxwellJay256/mega_12800)
+- Maxwell Jay - mega_12800: [https://github.com/MaxwellJay256/mega_12800](https://github.com/MaxwellJay256/mega_12800)
 
-longlin li - HITSZ_lab_project: [https://github.com/longlin10086/HITSZ_lab_project](https://github.com/longlin10086/HITSZ_lab_project)
+- longlin li - HITSZ_lab_project: [https://github.com/longlin10086/HITSZ_lab_project](https://github.com/longlin10086/HITSZ_lab_project)
 
-Chenx Dust - AutoCar: [https://github.com/chenxijun/AutoCar](https://github.com/chenxijun/AutoCar)
+- Chenx Dust - AutoCar: [https://github.com/chenxijun/AutoCar](https://github.com/chenxijun/AutoCar)
 
-psp_dada - AutoCar-AUTO1001: [https://github.com/pspdada/AutoCar-AUTO1001](https://github.com/pspdada/AutoCar-AUTO1001)
+- psp_dada - AutoCar-AUTO1001: [https://github.com/pspdada/AutoCar-AUTO1001](https://github.com/pspdada/AutoCar-AUTO1001)
 
-Gaster - Harmony: [https://github.com/WDGaster703/Harmony](https://github.com/WDGaster703/Harmony)
+- Gaster - Harmony: [https://github.com/WDGaster703/Harmony](https://github.com/WDGaster703/Harmony)
 
-## 其他
+## 其他信息
 
 ### 课程介绍
 

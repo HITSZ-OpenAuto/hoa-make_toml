@@ -2,6 +2,23 @@
 
 **课程代码:** COMP3013
 
+## 授课教师
+
+### 李旭涛
+
+很有激情的老师，上课很负责，对课程内容也很熟悉，少数可以抛开PPT直接板书的老师。很为学生考虑。会在课前准时发PPT，PPT做的很细致。上课最前几分钟会安排课前回顾。如果认真听讲的话，基本上不需要课下花时间就能弄清楚课程。
+              老师很照顾学生，基本上不管上课、作业、实验还是考试，都会想办法让大家过的轻松一点。
+
+## 在线资源
+
+- [B站辅助视频]([https://www.bilibili.com/video/BV1ft4y1X7p6](https://www.bilibili.com/video/BV1ft4y1X7p6))
+  MOOC 对通过考试有一定帮助
+
+- [形式语言与自动机MOOC]([https://www.icourse163.org/course/HIT-1206319802](https://www.icourse163.org/course/HIT-1206319802))
+  强推
+
+- [编译原理MOOC]([https://www.icourse163.org/course/HIT-1002123007](https://www.icourse163.org/course/HIT-1002123007))
+
 ## 考试
 
 考的全是原题和最基本的概念，基本上认真看两天怎么也能过了。

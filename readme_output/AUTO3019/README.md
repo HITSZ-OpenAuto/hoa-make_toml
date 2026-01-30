@@ -2,7 +2,24 @@
 
 **课程代码:** AUTO3019
 
-## 其他
+## 授课教师
+
+### 熊昊
+
+有时考勤，发一张表格让大家写名字。
+              讲解不算清晰。
+
+> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515)), 2025.1
+
+## 在线资源
+
+- [Machine Learning (2021 Spring)]([https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php](https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php))
+  国立台湾大学李宏毅教授课程（本课程完全照搬此内容）。
+
+- [Introduction to Generative AI (2024 Spring)]([https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring.php](https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring.php))
+  李宏毅教授 2024 年春季开设的生成式人工智能导论。
+
+## 其他信息
 
 ### 作业与考核详情
 

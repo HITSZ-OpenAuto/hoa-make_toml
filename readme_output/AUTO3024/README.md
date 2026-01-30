@@ -2,6 +2,48 @@
 
 **课程代码:** AUTO3024
 
+## 授课教师
+
+### 黄瑞宁
+
+负责理论课。这位老师参与过 18、19 级学生的《自动控制实践 B》教学，彼时他就负责其中嵌入式部分的讲授。
+              授课风格：
+              - 同学 1：偶尔考勤，上课细致。
+              - 同学 2：若无基础较难听懂。
+
+> 文 / [Oliver Wu]([https://github.com/oliverwu515](https://github.com/oliverwu515)), 2025.1
+
+### 王彬彬
+
+人很好，一直帮忙解决问题，多问老师，和同学多交流可以实验满分。
+              但是基本上大家都没有在安排的实验课内完成，大部分同学都是课下去做完的。最后实验老师会给没做出的同学讲解代码。
+
+> 文 / [Oliver Wu]([https://github.com/oliverwu515](https://github.com/oliverwu515)), 2025.1
+
+## 教材与参考书
+
+**课程 ppt、实验指导书**
+
+## 在线资源
+
+- [南工骁鹰嵌入式软件培训]([https://www.bilibili.com/video/BV1VT411N7dK](https://www.bilibili.com/video/BV1VT411N7dK))
+  某学长锐评：真想学 STM32 还是它的含金量高。包含了许多本课程中未包含的内容（CAN等）。
+
+- [STM32StepByStep: Step2 Blink LED]([https://wiki.stmicroelectronics.cn/stm32mcu/wiki/STM32StepByStep:Step2_Blink_LED](https://wiki.stmicroelectronics.cn/stm32mcu/wiki/STM32StepByStep:Step2_Blink_LED))
+  通过点灯，快速熟悉 IDE 的开发流程。
+
+- [CH341 串口驱动]([https://www.wch-ic.com/downloads/CH341SER_EXE.html](https://www.wch-ic.com/downloads/CH341SER_EXE.html))
+  除了老师一般会发的 Windows 版本外，还含有 MacOS 和 Linux 的版本。
+
+- [printf 重定向]([https://github.com/STMicroelectronics/STM32CubeH7/blob/master/Projects/STM32H743I-EVAL/Examples/UART/UART_Printf/Src/main.c](https://github.com/STMicroelectronics/STM32CubeH7/blob/master/Projects/STM32H743I-EVAL/Examples/UART/UART_Printf/Src/main.c))
+  STM32 官方文档中的重定向方法。
+
+## 课程评价
+
+理论课基本每节课都有课堂小测，建议把题目记下来方便后面复习，老师会对比纸张和笔迹，判断是不是代写。
+
+> 文 / [ZhuQi]([https://github.com/zhuqi000](https://github.com/zhuqi000)), 2026.1
+
 ## 考试
 
 考试题型大概是四个选择（每题 5 分）外加 8-10 个简答和简单计算，除选择题外基本上见于 `materials/2024-嵌入式复习.pptx`。给分很高。
@@ -31,8 +73,6 @@
 
 实验课的内容是 STM32 开发，MCU 型号是 STM32F407ZGT6。
 推荐大家使用 STM32CubeIDE 这个 All in one 的软件（包含了 CubeMX，可以不用单独下载）进行使用，它提供对 MacOS 或者 Linux 操作系统的支持。
-
-> 文 / [Kowyo]([https://github.com/kowyo](https://github.com/kowyo)), 2024.6
 
 ## 课程安排
 

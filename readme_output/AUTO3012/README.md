@@ -2,6 +2,20 @@
 
 **课程代码:** AUTO3012
 
+## 授课教师
+
+### 李芃
+
+授课风格：念 PPT。时有一些板书和扩展。
+
+> 文 / [Oliver Wu]([https://www.github.com/OliverWu515](https://www.github.com/OliverWu515)), 2024.11
+
+## 课程评价
+
+课程覆盖感知、规划、控制等多方面内容，比较基础。PPT 观感不佳，稍显混乱，可听老师讲解。概念比较多，但最后不考试，无需死记硬背。
+
+> 文 / [Oliver Wu]([https://www.github.com/OliverWu515](https://www.github.com/OliverWu515)), 2024.11
+
 ## 考试
 
 没有考试。

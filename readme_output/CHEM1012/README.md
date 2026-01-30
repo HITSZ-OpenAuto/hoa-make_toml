@@ -2,6 +2,12 @@
 
 **课程代码:** CHEM1012
 
+## 课程评价
+
+总的来说，大学化学III 占用时间精力很少，性价比还是很高的。
+
+> 文 / [Maxwell Jay]([https://github.com/MaxwellJay256](https://github.com/MaxwellJay256)), 2023.9
+
 ## 考试
 
 大学化学III 没有期末考试，这是这门课对学生最友好的一点，学习压力会小很多。

@@ -2,6 +2,57 @@
 
 **课程代码:** COMP2008
 
+## 授课教师
+
+### 张丽杰
+
+经验老到，对课程把握清晰、定位明确，考点清楚。经常在上课时点明考点。
+              PPT 参考中国大学 MOOC，比较经典，但内容略显简略，需要多看书。
+              本部 MOOC 讲得很好，但 2021 年教改后增加了 RISC-V 内容，建议补充其他网课。
+
+### 顾崇林
+
+人很好，QQ 回复问题快，对不来上课的同学很宽容，甚至发过糖果。
+              讲课进度前期稍慢，后期加速（他是教改负责人，熟悉 RISC-V 流水线内容），会花时间复习。
+
+### 王鸿鹏
+
+经验丰富，风格轻松幽默。课堂内容全面，但有时拓展过深，较少强调考试重点。
+              更在乎学生是否听懂及完成实验。作业期限较宽松。
+
+### 花忠云
+
+教学内容熟悉，会提前发 PDF 版 PPT。态度认真，上课会回顾上一章重点。
+              语速较快且有一点口音，但意识到这点后会在重点处重复讲解。课间乐于答疑。
+
+## 教材与参考书
+
+**计算机组成原理**
+作者：唐朔飞 | 出版社：高等教育出版社 | 版本：第 3 版
+
+**计算机组成原理 (Computer Organization and Architecture)**
+作者：Alan Clements / 沈立 等译 | 出版社：机械工业出版社
+
+**计算机组成原理**
+作者：戴志涛 / 白中英 | 出版社：科学出版社 | 版本：第 7 版
+
+## 在线资源
+
+- [中国大学 MOOC - 哈尔滨工业大学（上）]([https://www.icourse163.org/course/HIT-309001](https://www.icourse163.org/course/HIT-309001))
+  本部精品课程，张丽杰老师推荐
+
+- [中国大学 MOOC - 哈尔滨工业大学（下）]([https://www.icourse163.org/course/HIT-1001527001](https://www.icourse163.org/course/HIT-1001527001))
+  本部精品课程，涵盖后续章节
+
+- [2020 年网课重难点剖析实录]([https://www.bilibili.com/video/BV11y4y147Av/](https://www.bilibili.com/video/BV11y4y147Av/))
+  Bilibili 录播资源
+
+- [浙大 MOOC (RISC-V 部分参考)]([https://www.icourse163.org/learn/ZJU-1452997167](https://www.icourse163.org/learn/ZJU-1452997167))
+  适合补充 RISC-V 相关知识
+
+- [台湾科技大学网课 (流水线部分参考)]([https://www.bilibili.com/video/BV1554y1s7LS?from=search&seid=12140037767673758757](https://www.bilibili.com/video/BV1554y1s7LS?from=search&seid=12140037767673758757))
+  适合补充流水线相关知识
+
 ## 考试
 
 **2020年及以前**：

@@ -2,6 +2,15 @@
 
 **课程代码:** COMP3017
 
+## 授课教师
+
+### Joanna Siebert
+
+## 在线资源
+
+- [2023年春笔记]([https://github.com/xuanhao44/Service-Computing](https://github.com/xuanhao44/Service-Computing))
+  Service-Computing 课程笔记
+
 ## 考试
 
 形式：

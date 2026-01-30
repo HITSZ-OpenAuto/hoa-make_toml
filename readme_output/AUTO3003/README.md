@@ -2,6 +2,23 @@
 
 **课程代码:** AUTO3003
 
+## 授课教师
+
+### 陈浩耀
+
+### 吴晓军
+
+全英文课件，由于内容多学时少所以讲得很快。考勤的方式是上课时让所有同学在一张纸上写名字，据我观察出勤率很低。
+            学习内容之间的耦合关系比较强，所以如果某一节没听，后面想跟上就很难了。但是不必担心，大家都一样跟不上。
+
+## 教材与参考书
+
+**数字图像处理（第四版）**
+作者：[美] Rafael C. Gonzalez / [美] Richard E. Woods | 出版社：电子工业出版社 | 版本：第四版
+
+**图像工程（第4版）上册**
+作者：章毓晋 | 出版社：清华大学出版社 | 版本：第4版
+
 ## 考试
 
 考试为半开卷，允许携带计算器和一张 A4 纸小抄。
@@ -39,15 +56,13 @@
 
 就知识本身而言，数字图像处理对于机器人竞赛的中的视觉部分等实际应用还是有一些帮助的，毕竟处理图像是理解图像的前提。
 
-> 文 / [Maxwell Jay]([https://github.com/MaxwellJay256](https://github.com/MaxwellJay256)), 2025.1
-
 ## 相关链接
 
-MaxwellJay256/DDR4: [https://github.com/MaxwellJay256/DDR4](https://github.com/MaxwellJay256/DDR4)
+- MaxwellJay256/DDR4: [https://github.com/MaxwellJay256/DDR4](https://github.com/MaxwellJay256/DDR4)
 
-longlin 的课设幻灯片: [https://pre.longlin.tech/](https://pre.longlin.tech/)
+- longlin 的课设幻灯片: [https://pre.longlin.tech/](https://pre.longlin.tech/)
 
-## 其他
+## 其他信息
 
 ### 作业
 

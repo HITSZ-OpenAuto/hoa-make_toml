@@ -2,6 +2,30 @@
 
 **课程代码:** COMP3001
 
+## 授课教师
+
+### 刘川意
+
+上课抽点回答问题。
+              PPT 基本是《操作系统导论》的原版英文 PPT。
+              助教非常负责。
+              不一定课前发 PPT，基本随缘。
+
+### 夏文
+
+讲课很专业。中文 PPT，内容多，总的参考《CSAPP》。
+
+## 教材与参考书
+
+**Operating Systems: Three Easy Pieces (操作系统导论)**
+作者：Remzi H. Arpaci-Dusseau / Andrea C. Arpaci-Dusseau | 出版社：Arpaci-Dusseau Books
+
+**Computer Systems: A Programmer's Perspective (CSAPP)**
+作者：Randal E. Bryant / David R. O'Hallaron | 出版社：Pearson | 版本：3rd Edition
+
+**王道考研系列：操作系统考研复习指导**
+作者：王道论坛 | 出版社：电子工业出版社
+
 ## 考试
 
 可以参考《王道考研——操作系统》进行复习。
@@ -19,7 +43,7 @@
 操作系统确实是 CS 的一门很重要的课程，好好学习必不会吃亏！
 课程可能会设置「附加题」，保证平时分 + 实验分拉满。请审慎选择！
 
-## 其他
+## 其他信息
 
 ### 实验变化
 

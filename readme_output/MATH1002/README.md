@@ -2,6 +2,64 @@
 
 **课程代码:** MATH1002
 
+## 授课教师
+
+### 李文彬
+
+授课风格：幽默风趣。上课以板书为主，基本不用PPT。
+              上课无考勤，不点名。
+              听课建议：若是已经提前学习了课程内容，可以不听课，自己学习其它。
+
+### 梁慧
+
+授课风格：上课以板书为主，基本是复述一遍书上内容，有时稍有补充。除解析几何部分基本不用PPT。
+              上课有时考勤/点名。
+              听课建议：若是已经提前学习了课程内容，可以不听课，自己学习其它。
+
+### 史峰
+
+授课风格：偏学术性，拓展内容较为丰富，对入门不友好（但是平时自己研究些东西之后会发现他讲过）。
+              上课无考勤。
+              听课建议：建议自力更生。
+
+### 郑宝东
+
+Comments wanted here!
+
+### 曾吉文
+
+（原为外聘教师，现已退休）
+              授课风格：PPT + 板书。听课效果方面，不怎么好抓住重点，很多时候上完一节课，还是不知道关键的某些解题过程是怎么写的。
+              上课无考勤。
+              听课建议：建议自力更生。
+
+## 教材与参考书
+
+**大学数学. 线性代数与空间解析几何**
+作者：郑宝东 / 郭潇 / 王忠英 | 出版社：高等教育出版社 | 版本：第 5 版
+
+**线性代数及其应用 (Linear Algebra and Its Applications)**
+作者：David C. Lay | 出版社：机械工业出版社
+
+**Introduction to Linear Algebra**
+作者：Gilbert Strang | 出版社：Wellesley-Cambridge Press
+
+**线性代数**
+作者：Gilbert Strang (清华大学出版社版) | 出版社：清华大学出版社
+
+**线性代数与空间解析几何 疑难解答 / 习题指导**
+
+## 在线资源
+
+- [MIT 18.06 Linear Algebra (Gilbert Strang)]([https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/))
+  全球广受好评的线代神课，B站搜索「MIT 线性代数」亦可观看。
+
+- [MIT 18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning]([https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/))
+  偏向 EECS 方向学生的线代课程，适合学完 18.06 后进阶。
+
+- [哈尔滨工业大学 线性代数 MOOC]([https://www.icourse163.org/](https://www.icourse163.org/))
+  中国大学 MOOC 平台
+
 ## 考试
 
 考试整体难度适中（比高数简单一些），打分较友好。期中考平均分在 23 左右，期末考平均分在 40 左右，不捞人，挂科比例大约 1% 到 2%。
@@ -22,7 +80,7 @@
 
 有时间想进一步提升，可以做参考书《线性代数与空间解析几何 疑难解答》《线性代数与空间解析几何 习题指导》上的题目。没时间的话，至少将作业题弄清楚。
 
-## 其他
+## 其他信息
 
 ### 面向工程与实用性、长远发展的建议
 

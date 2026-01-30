@@ -2,10 +2,22 @@
 
 **课程代码:** EE1010
 
-## 课程描述
-
 本课程为考查课，无期末考试。
 六次实验，每次实验是 4 学时，任务量比较大，建议提前预习。
+
+## 在线资源
+
+- [Verilog 教程 (菜鸟教程)]([https://www.runoob.com/w3cnote/verilog-tutorial.html](https://www.runoob.com/w3cnote/verilog-tutorial.html))
+  推荐预习教程，软硬件结合实验必备。
+
+- [Easy 云课堂]([https://www.easyketang.com/](https://www.easyketang.com/))
+  实验报告提交与预习平台。电脑版建议使用网页端。
+
+## 课程评价
+
+授课教师：实验中心教师+（部分班级）理论课教师+二名本科生助教。
+
+> 文 / [Oliver Wu]([https://github.com/OliverWu515](https://github.com/OliverWu515))
 
 ## 实验
 
@@ -29,9 +41,9 @@
 
 ## 相关链接
 
-[https://github.com/MaxwellJay256/FPGALab_2024](https://github.com/MaxwellJay256/FPGALab_2024)
+- [[https://github.com/MaxwellJay256/FPGALab_2024](https://github.com/MaxwellJay256/FPGALab_2024)]([https://github.com/MaxwellJay256/FPGALab_2024](https://github.com/MaxwellJay256/FPGALab_2024))
 
-## 其他
+## 其他信息
 
 ### 预习与提交要求
 

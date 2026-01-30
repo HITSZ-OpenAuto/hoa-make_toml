@@ -2,6 +2,32 @@
 
 **课程代码:** COMP2051
 
+## 授课教师
+
+### 高翠芸
+
+一个非常负责的老师，上课条理清晰，面对疑问也会耐心解答，PPT做得简洁明了，每节课前会提前发到群里，偶尔抽查点到，但是认真听课会对学习这门课程有很大帮助，建议按时上课。
+
+> 文 / [criwits]([https://github.com/criwits](https://github.com/criwits)), 2022.6
+
+### 张春慨
+
+### 崔爱娇
+
+崔老师非常认真负责，会尽量去认识班上的每位同学，因此前期点名较多。老师课上讲授细致，经常让同学回答问题，课下也会把PPT发到群里供大家复习。如果课上能跟着老师的节奏一起走，是非常有利于深化对所学知识的理解的。
+
+> 文 / [PVZ&X]([https://github.com/wpj9362](https://github.com/wpj9362)), 2026.1
+
+## 教材与参考书
+
+**逻辑设计基础**
+作者：Charles H. Roth,Jr / Larry L. Kinney | 出版社：清华大学出版社 | 版本：7版
+
+## 在线资源
+
+- [潜伏的数逻实验仓库]([https://github.com/capoo-fan/class-experiment/tree/main/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF](https://github.com/capoo-fan/class-experiment/tree/main/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF))
+  相关实验仓库
+
 ## 考试
 
 考试难度中等，高分主要集中在 96，97 分段，较为友好，建议认真写作业，复习重点可以放在PPT上，尤其是各种模型的理解分析，掌握做题方法就可以。
@@ -42,5 +68,3 @@
 ## 建议
 
 不会完全按照课本进行讲授，每年讲授内容也不完全相同，学习请以当年 PPT 为准，教材仅供参考。
-
-> 文 / [criwits]([https://github.com/criwits](https://github.com/criwits)), 2022.6
