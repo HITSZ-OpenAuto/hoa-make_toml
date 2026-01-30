@@ -1,7 +1,0 @@
-course_name = "设计与制造B"
-repo_type = "normal"
-course_code = "MECH2020"
-
-notices = """
-2023 级，本门课作为机器人与智能装备集群的必修课。2024 级，本门课与[计算机系统](https://hoa.moe/docs/sophomore-spring/comp3052)作为机器人与智能装备集群的[二选一]课程，建议选择机器人工程的学生修读。
-"""

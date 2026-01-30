@@ -1,0 +1,20 @@
+course_name = "大学化学III"
+repo_type = "normal"
+course_code = "CHEM1012"
+
+# 核心课程评价区块
+[[course]]
+content = """总的来说，大学化学III 占用时间精力很少，性价比还是很高的。"""
+author = { name = "Maxwell Jay", link = "https://github.com/MaxwellJay256", date = "2023-09-01" }
+
+[[exam]]
+content = """大学化学III 没有期末考试，这是这门课对学生最友好的一点，学习压力会小很多。"""
+author = { name = "Maxwell Jay", link = "https://github.com/MaxwellJay256", date = "2023-09-01" }
+
+[[lab]]
+content = """
+开课期间要求学生在 3 个模块中各选择一个化学实验完成，每个时长在 3 学时左右。
+
+难度整体都一般，还是挺有意思的（在本科期间有多少机会进入化学实验室呢？）。
+"""
+author = { name = "Maxwell Jay", link = "https://github.com/MaxwellJay256", date = "2023-09-01" }

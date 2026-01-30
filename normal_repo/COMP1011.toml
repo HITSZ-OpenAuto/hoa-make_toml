@@ -1,0 +1,83 @@
+course_name = "程序设计与思维实践"
+repo_type = "normal"
+course_code = "COMP1011"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "教师团队"
+
+  [[lecturers.reviews]]
+  content = """
+  教师上课风格没有很活泼，照着 ppt 念，而且速度偏快。
+              听课并不必须，因为 C语言 的语法，主要不是听讲学来的，而是自己敲代码所体悟到，上课建议可以自己敲敲代码。
+  """
+  author = { name = "lmh", link = "https://github.com/lmh12138", date = "" }
+
+# 教材与参考书(不需要author)
+[[textbooks]]
+title = "C语言程序设计"
+book_author = "苏小红 等"
+publisher = "高等教育出版社"
+edition = "第 4 版"
+type = "textbook"
+
+[[textbooks]]
+title = "数据结构与算法"
+book_author = "廖明宏 / 郭福顺 / 张岩 / 李秀坤"
+publisher = "高等教育出版社"
+edition = "第 4 版"
+type = "textbook"
+
+# 网络资源（电子书、网课等）
+[[online_resources]]
+title = "微软官方 C 语言文档"
+url = "https://learn.microsoft.com/zh-cn/cpp/c-language/organization-of-the-c-language-reference?view=msvc-170"
+description = "微软官方提供的C教程，内容与时俱进，适合电子化学习。"
+
+[[online_resources]]
+title = "OI Wiki"
+url = "https://oi-wiki.org/"
+description = "算法相关知识可以参考此 Wiki。"
+
+[[online_resources]]
+title = "Coursera / YouTube C语言课程"
+url = ""
+description = "推荐英文授课视频，B站可能有搬运。英文好的建议直接看生肉。"
+
+[[online_resources]]
+title = "中国大学 MOOC / B站网课"
+url = "https://www.icourse163.org/"
+description = "推荐北大的 C语言 和浙江大学翁恺的 C语言。"
+
+# 核心课程评价区块
+[[course]]
+content = """
+3202 年了，大学中居然还存在这种考试要手写代码，语言标准还停留在上个世纪的编程语言课，简直不可思议。
+作为大多数人接触的第一门编程语言，c语言劝退了很多萌新。如果你觉得这门语言晦涩难懂，大概率不是你的问题，而是教材或是授课老师的问题（也有可能是语言本身的问题）。
+你不能指望通过学校的课程学习这门课（当然如果你只是针对考试以后并不想做与编程有关的事情当我没说），你也不能指望通过国内教材学习编程语言，更不能指望b站上国内诸如某马、某士兵之类的培训机构。
+"""
+author = { name = "longlin", link = "https://github.com/longlin10086", date = "2023-09-01" }
+
+[[course]]
+content = """
+24 的程序设计属于是烂上加烂，将算法与语法混合着讲，而且顺序十分奇葩。涉及递归、栈、链表、排序算法。到现在老师上课和考试用的 C 语言标准还是 C89（虽然教材已经用的 C99 了）。
+课程作业是一段时间一收，且作业量偏大，建议不要留到要交的前一天晚上再看，有一些作业对实际代码能力帮助不大，有些老师要求上交纸质版。
+"""
+author = { name = "syhanjin", link = "https://github.com/syhanjin", date = "2025-01-01" }
+
+[[lab]]
+content = """
+实验一共九次。前四次实验较简单，而且是独立实验。后五次实验难度较大，代码量较大，综合考察指针、数组、函数、结构体，任务大体相似，只是具体要求不同。
+每年实验几乎不变。助教答疑很随便，大多是让自己去调试。
+前三、四个课上基本可以完成，课后大概只需花一点时间完善一下，并测试好。后五个实验需要在课后花大量时间，才能写完，一个实验课后大约多花 2-4 小时。
+ps:要想拿高分，除了基本要求外，还有增强代码健壮性，还有多写注释，课后还需更多时间。
+"""
+author = { name = "lmh", link = "https://github.com/lmh12138", date = "" }
+
+[[lab]]
+content = """
+自 24 开始实验课发生大幅改动，具体实验内容根据课程进度。实验报告需要交 CodeBlocks 项目。
+最后两个实验是综合项目（但是一百多行代码可以解决），且几乎没有差异（单向链表改双向链表）。
+实验课最后一次有现场检查，会随机选一次实验让你用 Debug 调试，并讲解思路（原则上是使用 CodeBlocks，但是可以找老师检查用自己熟悉的 IDE，取决于老师）。
+"""
+author = { name = "syhanjin", link = "https://github.com/syhanjin/", date = "2025.1" }

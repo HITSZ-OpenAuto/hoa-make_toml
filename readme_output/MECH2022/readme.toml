@@ -1,0 +1,87 @@
+course_name = "固体力学"
+repo_type = "normal"
+course_code = "MECH2022"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "彭福军"
+
+  [[lecturers.reviews]]
+  content = """
+  讲授：《材料力学I》第六章及之前的内容，即《简单的超静定问题》之前的内容。
+              教学风格：
+              - 临近学期中期会地毯式点一次名
+              - 说话比较有激情
+  """
+  author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2025-09-01" }
+[[lecturers]]
+name = "白玉超"
+
+  [[lecturers.reviews]]
+  content = """
+  讲授：
+              - 《材料力学I》第七章及之后的内容，即《应力状态》及之后的内容
+              - 《材料力学II》和《弹性力学简明教程》中教学大纲所列的内容。
+              教学风格：
+              - 不点名，课堂比较轻松
+  """
+  author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2025-09-01" }
+
+# 教材与参考书(不需要author)
+[[textbooks]]
+title = "材料力学I"
+book_author = "孙训方、方孝淑、关来泰"
+publisher = "高等教育出版社"
+edition = "第 6 版"
+type = "textbook"
+
+[[textbooks]]
+title = "材料力学II"
+book_author = "孙训方、方孝淑、关来泰"
+publisher = "高等教育出版社"
+edition = "第 6 版"
+type = "textbook"
+
+[[textbooks]]
+title = "弹性力学简明教程"
+book_author = "徐芝纶"
+publisher = "高等教育出版社"
+edition = "第 5 版"
+type = "textbook"
+
+[[exam]]
+content = """
+2025 春期末考试题量**巨大**，但是题型组成记不太清了；可能是：
+- 单选题 * 5
+- 填空题 * 10？
+- 计算题 * ？
+
+每个计算题考察一个知识点，能想起来的有：
+- 梁的弯矩图
+- 计算梁的挠度
+- 钢架的弯矩图
+- 压杆稳定性判断、柔度判断
+"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2025-09-01" }
+
+[[advice]]
+content = """
+《材料力学I》的部分其实比较有逻辑，围绕四种基本变形形式展开：
+- 拉伸或压缩
+- 剪切
+- 扭转
+- 弯曲
+
+这些形式各自有一些公式用于定量描述、计算变形，学习时注意前后参考。比如线弹性范围内的胡克定律，在拉压、剪切变形中公式形式非常相似。注意到这些点有助于学习。
+后面则讲述它们的组合变形，以及一些特殊的构件变形形式。
+"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2025-09-01" }
+
+# 兜底板块
+[[misc]]
+topic = "作业说明"
+content = """
+材料力学作业几乎不来自教材，而是从国外教材习题中截取。当然，涉及的知识点肯定是一致的，但题目、答案使用的符号字母与国内教材不一致，习惯就好。
+由于文件较大，参考答案已上传至校内网盘。
+"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2025-09-01" }

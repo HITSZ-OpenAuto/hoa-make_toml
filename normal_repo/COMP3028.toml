@@ -1,0 +1,21 @@
+course_name = "软件体系结构"
+repo_type = "normal"
+course_code = "COMP3028"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "Joanna Siebert"
+
+[[exam]]
+content = """
+形式：Open book 开卷
+题型：
+1. Multiple choice questions – 10 questions, 3 points each 单选题！
+2. Short description questions – 5 questions, 6 points each
+3. Case questions – 4 questions, 10 points each, 40 points in total
+"""
+author = { name = "", link = "", date = "" }
+
+# 相关链接
+[[related_links]]
+content = "https://github.com/xuanhao44/Software-Architecture"

@@ -1,0 +1,47 @@
+course_name = "优化算法"
+repo_type = "normal"
+course_code = "MATH4002"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "孙李刚"
+[[lecturers]]
+name = "凌超"
+[[lecturers]]
+name = "孙瑶"
+
+# 教材与参考书(不需要author)
+[[textbooks]]
+title = "工程最优化设计"
+book_author = "李元科"
+publisher = "清华大学出版社"
+edition = "第二版"
+type = "textbook"
+
+[[textbooks]]
+title = "Convex Optimization"
+book_author = "Boyd and Vandenberghe"
+publisher = ""
+edition = ""
+type = "reference"
+
+[[textbooks]]
+title = "凸优化"
+book_author = "王书宁、许鋆 等译"
+publisher = ""
+edition = ""
+type = "reference"
+
+# 网络资源（电子书、网课等）
+[[online_resources]]
+title = "Convex Optimization 书籍主页"
+url = "https://web.stanford.edu/~boyd/cvxbook/"
+description = "Boyd and Vandenberghe 著，英文原版资源"
+
+[[exam]]
+content = """可以携带一张 A4 纸。"""
+author = { name = "", link = "", date = "" }
+
+[[advice]]
+content = """达到考试要求用《工程最优化设计》这本书足矣。如果对优化有进一步要求，推荐阅读 Boyd 的《Convex Optimization》。"""
+author = { name = "", link = "", date = "" }

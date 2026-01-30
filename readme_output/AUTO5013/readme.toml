@@ -1,0 +1,14 @@
+course_name = "最优估计"
+repo_type = "normal"
+course_code = "AUTO5013"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "许鋆"
+
+[[exam]]
+content = """
+可带一张 A4 纸。
+以作业题、课堂例题为主，基本比较简单，但也会有一道较难的题。
+"""
+author = { name = "", link = "", date = "" }

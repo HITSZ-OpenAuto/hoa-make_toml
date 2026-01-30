@@ -1,0 +1,14 @@
+course_name = "专业综合实践"
+repo_type = "normal"
+course_code = "EE304X"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "王宏"
+
+  [[lecturers.reviews]]
+  content = """
+  电气自己的整蛊大师（
+              套件记得提醒他购买，报告给分较为随机。
+  """
+  author = { name = "", link = "", date = "" }

@@ -1,0 +1,27 @@
+course_name = "机电系统控制基础"
+repo_type = "normal"
+course_code = "MECH3005"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "包斌"
+[[lecturers]]
+name = "王昕"
+
+# 网络资源（电子书、网课等）
+[[online_resources]]
+title = "Nyquist 判据更常用的方法 (Bilibili)"
+url = "https://www.bilibili.com/video/BV1ikWneMEhc/"
+description = "课本介绍的 Nyquist 判据方法不是很好用，推荐参考此视频。"
+
+[[exam]]
+content = """2025 秋考试不算很难，总分平均分估计有 90 分。"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2026-01-01" }
+
+[[advice]]
+content = """
+按百分制的平时分里有 20 分选做题：写一篇小论文；课上没说清楚是否是选做额外加分（100+20=120）、作业说明里也没有说，但就最后成绩来看是不做 100-20——并非「选做题」🤣
+
+课本介绍的 Nyquist 判据方法不是很好用，学有余力~~或者根本没学~~的同学可以参考自动化[更常用的方法](https://www.bilibili.com/video/BV1ikWneMEhc/)。
+"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2026-01-01" }

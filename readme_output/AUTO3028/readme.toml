@@ -1,0 +1,60 @@
+course_name = "数学规划与数值优化"
+repo_type = "normal"
+course_code = "AUTO3028"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "谢秉磊"
+
+  [[lecturers.reviews]]
+  content = """19-21 级授课教师，该阶段由理学院负责，与低一级的电信学生共同开课。"""
+  author = { name = "", link = "", date = "" }
+[[lecturers]]
+name = "王雁"
+
+  [[lecturers.reviews]]
+  content = """22 级开始该课程转由机电学院负责，学时有所压减，23 级还增加了上机环节。"""
+  author = { name = "", link = "", date = "" }
+
+# 教材与参考书(不需要author)
+[[textbooks]]
+title = "数学规划及其应用"
+book_author = "范玉妹 等"
+publisher = "机械工业出版社"
+edition = "2018"
+type = "textbook"
+
+[[textbooks]]
+title = "运筹学"
+book_author = "教材编写组"
+publisher = "清华大学出版社"
+edition = "2005"
+type = "reference"
+
+[[textbooks]]
+title = "数学规划基础"
+book_author = "刘红英 等"
+publisher = "北京航空航天大学出版社"
+edition = "2012"
+type = "reference"
+
+[[textbooks]]
+title = "数据、模型与决策"
+book_author = "安得森 等"
+publisher = "机械工业出版社"
+edition = "2012"
+type = "reference"
+
+[[textbooks]]
+title = "运筹学的思想方法及应用"
+book_author = "焦宝聪"
+publisher = "北京大学出版社"
+edition = "2008"
+type = "reference"
+
+[[textbooks]]
+title = "运筹学与最优化方法"
+book_author = "吴祈宗"
+publisher = "机械工业出版社"
+edition = "2013"
+type = "reference"

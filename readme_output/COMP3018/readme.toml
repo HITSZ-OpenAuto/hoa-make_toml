@@ -1,0 +1,22 @@
+course_name = "图像处理"
+repo_type = "normal"
+course_code = "COMP3018"
+
+# 授课教师 (Lecturers)
+[[lecturers]]
+name = "卢光明"
+
+  [[lecturers.reviews]]
+  content = """人挺好，几乎不点名。"""
+  author = { name = "", link = "", date = "" }
+
+[[exam]]
+content = """英文题目，英文作答（不会涉及到复杂的英语表达）。开卷，可带计算器。难度适中，但没有计算器的情况下计算量稍大。"""
+author = { name = "", link = "", date = "" }
+
+[[advice]]
+content = """
+中文授课，英文 PPT（有少量中文注解）。
+英文题目。注意实验报告需要用英文撰写。
+"""
+author = { name = "", link = "", date = "" }
