@@ -1,5 +1,6 @@
 course_code = "CrossSpecialty"
 repo_type = "multi-project"
+course_name = "跨专业仓库"
 
 description = """此为混合仓库，pr记得确认好结构"""
 

@@ -64,10 +64,12 @@ def format_toml_content(data: Dict[str, Any]) -> str:
     """将数据转换为标准 TOML 格式"""
     lines = []
     
-    # 1. course_code、repo_type 和 category
+    # 1. course_code、repo_type、course_name 和 category
     if 'course_code' in data:
         lines.append(f'course_code = "{escape_toml_string(data["course_code"])}"')
     lines.append('repo_type = "multi-project"')
+    if 'course_name' in data:
+        lines.append(f'course_name = "{escape_toml_string(data["course_name"])}"')
     if 'category' in data:
         lines.append(f'category = "{escape_toml_string(data["category"])}"')
     

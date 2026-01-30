@@ -1,5 +1,6 @@
 course_code = "GeneralKnowledge"
 repo_type = "multi-project"
+course_name = "文理通识 - 线下"
 
 description = """
 ![考查课](https://img.shields.io/badge/%E8%80%83%E6%9F%A5%E8%AF%BE-Green)

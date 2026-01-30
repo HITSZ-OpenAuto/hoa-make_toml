@@ -97,12 +97,12 @@ def generate_markdown(data: Dict[str, Any], filename: str) -> str:
     """将 TOML 数据转换为 Markdown"""
     lines = []
     
-    # 标题：分类名称
-    if 'category' in data:
-        lines.append(f"# {data['category']}")
+    # 标题：课程名称（course_name 作为 H1）
+    if 'course_name' in data:
+        lines.append(f"# {data['course_name']}")
         lines.append("")
     
-    # Description（全局介绍）
+    # Description（全局介绍，放在标题下方）
     if 'description' in data and data['description']:
         desc = data['description']
         if isinstance(desc, str):
@@ -280,16 +280,16 @@ def main():
 
     for toml_path in toml_files:
         filename = os.path.basename(toml_path)
-        # 获取 category 作为输出目录名
+        # 获取 course_code 或 category 作为输出目录名
         data = parse_toml_file(str(toml_path))
-        category = data.get('category', filename.replace('.toml', '')) if data else filename.replace('.toml', '')
+        output_folder = data.get('course_code', data.get('category', filename.replace('.toml', ''))) if data else filename.replace('.toml', '')
         
-        output_path = os.path.join(OUTPUT_DIR, category, "README.md")
+        output_path = os.path.join(OUTPUT_DIR, output_folder, "README.md")
         
         result = process_toml_file(str(toml_path), output_path)
         
         if result is True:
-            print(f"  [OK] 已生成: {category}/README.md + readme.toml")
+            print(f"  [OK] 已生成: {output_folder}/README.md + readme.toml")
             stats['success'] += 1
         elif result is None:
             print(f"  [SKIP] 非 multi-project 类型，已跳过: {filename}")

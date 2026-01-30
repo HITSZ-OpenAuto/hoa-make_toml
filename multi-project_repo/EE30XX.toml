@@ -1,5 +1,6 @@
 course_code = "EE30XX"
 repo_type = "multi-project"
+course_name = "电气专业选修课"
 
 description = """
 【考查课】

@@ -1,5 +1,6 @@
 course_code = "MOOC"
 repo_type = "multi-project"
+course_name = "文理通识 - MOOC"
 
 description = """
 【考查课】
