@@ -1,0 +1,50 @@
+course_name = "人工智能"
+repo_type = "normal"
+course_code = "COMP3005"
+
+[[lecturers]]
+name = "tbz"
+  [[lecturers.reviews]]
+  content = "PPT 非常精美，适合学习、复习。大多数时候不太会会课前发。"
+  author = { name = "", link = "", date = "" }
+
+[[lecturers]]
+name = "sjy"
+  [[lecturers.reviews]]
+  content = "讲得很好。"
+  author = { name = "", link = "", date = "" }
+
+[[lecturers]]
+name = "xzl"
+  [[lecturers.reviews]]
+  content = "暂无评价。"
+  author = { name = "", link = "", date = "" }
+
+[[lecturers]]
+name = "lwj"
+  [[lecturers.reviews]]
+  content = "润。"
+  author = { name = "", link = "", date = "" }
+
+[[lab]]
+content = """
+小组合作：
+- 实验 1：Pacmac 吃豆人实验，可以*网上借鉴*前人的经验，还算有意思。
+- 实验 2：花卉识别，要求用多种深度学习框架。
+- 答辩：内容包含上述两个实验。
+
+唯一的难点是，需要提前**学习 Python 基础知识和简单的深度学习框架**。
+"""
+author = { name = "", link = "", date = "" }
+
+[[exam]]
+content = """
+考试中规中矩。看好作业题，看好 PPT 和作业题。
+可能会考一道大题叙述概念，批阅比较松。
+带好计算器。
+"""
+author = { name = "", link = "", date = "" }
+
+[[advice]]
+content = "打破你对《人工智能》的幻想。"
+author = { name = "", link = "", date = "" }

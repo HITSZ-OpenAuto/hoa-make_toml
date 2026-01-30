@@ -1,0 +1,77 @@
+course_name = "文理通识 - MOOC"
+course_code = "MOOC"
+
+notices = """
+本文件夹下目录采用 答案 + README.md 的形式，README.md 则是描述该门课程的相关说明。
+资料均来自前人收集整理，不能保证答案 100% 正确。
+
+MOOC 事实上是「文理通识」课程中一类线上课的统称，与其他考查课地位相同，算入总 GPA 中。
+不同的线上课考核方式各不相同，有的课没有平时分，有的课没有期末考试；因此，涉及到分数的地方，务必以你所选课程的分数说明为准！
+"""
+
+[grade]
+[grade.default]
+default = "因课而异，请见具体课程说明"
+
+[[online_resources]]
+title = "刷课脚本汇总仓库"
+url = "https://github.com/longlin10086/awesome-mooc-script"
+description = "longlin/awesome-mooc-script"
+author = { name = "longlin10086", link = "", date = "" }
+
+[[online_resources]]
+title = "智慧树刷课脚本"
+url = "https://github.com/CXRunfree/Autovisor"
+description = "Autovisor"
+author = { name = "CXRunfree", link = "", date = "" }
+
+[[online_resources]]
+title = "雨课堂刷课脚本"
+url = "https://github.com/Niuwh/yuketang-jiaoben"
+description = "yuketang-jiaoben"
+author = { name = "Niuwh", link = "", date = "" }
+
+[[online_resources]]
+title = "测试答案下载"
+url = "https://hoa.moe/docs/general-knowledge/mooc/#资料下载"
+description = "MOOC 测试答案汇总"
+author = { name = "", link = "", date = "" }
+
+[[online_resources]]
+title = "哈工大深圳思政实践平台"
+url = "http://szsj.hitsz.edu.cn"
+description = "思政实践课程平台"
+author = { name = "", link = "", date = "" }
+
+[[course]]
+content = """
+MOOC 只是一个统称，其实包含很多门课程。虽然是直选课（抢课），但容量很大（2000人/课），基本不用担心选不上。
+2024 年春，学校的 MOOC 联合三个课程平台授课，评价如下：
+1. 中国大学慕课：网课支持连续播放，或者点击后马上退出即可（平台会认为已刷完）。
+2. 学堂云在线：不支持连续播放，看完一节才能看下一节，比较折磨。
+3. 智慧树：会在视频中间弹出问题暂停视频，不回答就不动，比较恶心。
+"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2024-05-01" }
+
+[[advice]]
+content = """
+MOOC 挂科同样被视为有挂科记录！因此至少要像对待水课一样保证不挂科。
+常见挂科原因：忘记刷视频、忘记参加期末考试。
+挂科后果：可能影响转专业等政策（例如 22 级某同学案例）。
+关于保研：根据 lmh 学长的描述，挂 MOOC 目前暂不会影响保研资格。
+"""
+author = { name = "IcyDesert", link = "https://github.com/IcyDesert", date = "2024-05-01" }
+
+[[advice]]
+content = "推荐的选课方式其实是看平台。建议优先选择「中国大学慕课」平台，避免选择机制繁琐的平台。"
+author = { name = "23级自救群", link = "", date = "2024-05-01" }
+
+[[misc]]
+topic = "思政实践课程"
+content = """
+思政实践课程属于一类特殊的 MOOC 课程，是在哈工大深圳的思政实践平台上进行的。
+需要完成一定的实践课程慕课和实践案例视频，具体要求根据各学院可能有不同。
+由于这个平台课程较多且会随机暂停且无法拖动进度条，建议使用刷课脚本自动完成课程。
+教程路径：思政实践网课/刷课脚本使用教程.md
+"""
+author = { name = "", link = "", date = "" }

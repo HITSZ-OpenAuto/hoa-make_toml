@@ -1,0 +1,31 @@
+course_name = "软件工程"
+repo_type = "normal"
+course_code = "COMP3002"
+
+[[lecturers]]
+name = "廖清"
+  [[lecturers.reviews]]
+  content = "经验丰富，口齿伶俐，善良可爱。会在个人网站上发布 PPT，任务安排等。PPT 精炼，但是条理性一般。作为一门偏实操的课，听课的意义不是非常大。"
+  author = { name = "", link = "", date = "" }
+
+[[lecturers]]
+name = "陈芳林"
+  [[lecturers.reviews]]
+  content = "较为有经验的老师。"
+  author = { name = "", link = "", date = "" }
+
+[[lab]]
+content = "会有一个课程项目，需要小组合作，既有编码也有文档的需求。注意选好队友，小组合理分工，记得不要拖延！"
+author = { name = "", link = "", date = "" }
+
+[[lab]]
+content = "update 2021：因为其他课程（OS、DB）实验密集，所以删掉了软工的课程项目，考试比重加大。"
+author = { name = "", link = "", date = "2021-01-01" }
+
+[[exam]]
+content = """
+“白盒测试”要考非常多的分。
+会问一些概念性的东西。
+总体上比较简单，但是不太容易高分。
+"""
+author = { name = "", link = "", date = "" }

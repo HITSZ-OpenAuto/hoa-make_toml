@@ -1,0 +1,61 @@
+course_name = "编译原理"
+repo_type = "normal"
+course_code = "COMP3013"
+
+[[lecturers]]
+name = "李旭涛"
+  [[lecturers.reviews]]
+  content = """
+  很有激情的老师，上课很负责，对课程内容也很熟悉，少数可以抛开PPT直接板书的老师。很为学生考虑。会在课前准时发PPT，PPT做的很细致。上课最前几分钟会安排课前回顾。如果认真听讲的话，基本上不需要课下花时间就能弄清楚课程。
+  老师很照顾学生，基本上不管上课、作业、实验还是考试，都会想办法让大家过的轻松一点。
+  """
+  author = { name = "", link = "", date = "" }
+
+[[online_resources]]
+title = "B站辅助视频"
+url = "https://www.bilibili.com/video/BV1ft4y1X7p6"
+description = "MOOC 对通过考试有一定帮助"
+author = { name = "", link = "", date = "" }
+
+[[online_resources]]
+title = "形式语言与自动机MOOC"
+url = "https://www.icourse163.org/course/HIT-1206319802"
+description = "强推"
+author = { name = "", link = "", date = "" }
+
+[[online_resources]]
+title = "编译原理MOOC"
+url = "https://www.icourse163.org/course/HIT-1002123007"
+description = ""
+author = { name = "", link = "", date = "" }
+
+[[lab]]
+content = """
+实验的内容基本上是课堂上所讲的一些方法的代码实现。其实**比较简单**，难度甚至仅仅略胜于数据结构，使用纯C语言也能轻松应对。但是**指导书**写的很模糊，基本上可以说是*不知所云*，但是lxt老师会在现场不断地给大家提思路，说解法。建议与跟老师多沟通，问清实验要求，甚至可以直接问***实现思路***，确保实验可以完成。
+
+后续学年的实验可能会发生变化。
+
+注意实验前后的**关联性**，写到最后应该可以合成一个完整的mini编译器，不要各块独立地写！！
+
+> 后续：
+> 新版的实验给出了代码框架（语言为Java），在代码框架的基础上完成实验。
+"""
+author = { name = "", link = "", date = "" }
+
+[[exam]]
+content = """
+考的全是原题和最基本的概念，基本上认真看两天怎么也能过了。
+
+搞懂（或者背下来）《编译原理》部分的PPT，《形式语言》部分的作业题。考试重点在《编译原理》。
+
+老师真的有很大力在捞了，但是救不了一点都不学的，或者说有成见的孩子。
+
+> 后续：
+> 1. 2019级起，《形式语言与自动机》拆分成单独的一门课
+> 2. 2020 级和 2021 级的回忆版试题可供参考
+"""
+author = { name = "", link = "", date = "" }
+
+[[advice]]
+content = "MOOC 对通过考试有一定帮助。"
+author = { name = "", link = "", date = "" }

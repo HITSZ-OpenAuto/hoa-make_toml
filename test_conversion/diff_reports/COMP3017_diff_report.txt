@@ -1,0 +1,23 @@
+转换测试报告: COMP3017
+============================================================
+
+哈希值对比:
+  原始 TOML: 2ff43b8a7b989e74c0430d7d2043f445
+  第一轮 TOML: 876d7271018d8eaf0cf349aabf11485c
+  第二轮 TOML: 876d7271018d8eaf0cf349aabf11485c
+  第三轮 TOML: 876d7271018d8eaf0cf349aabf11485c
+  第一轮 README: 3900b2071d0e52a3def3c03b03451cc7
+  第二轮 README: d118b097ba3d0e6fd4872f799f6b62a2
+  第三轮 README: d118b097ba3d0e6fd4872f799f6b62a2
+
+
+README 变化详情:
+============================================================
+
+--- round1 -> round2 ---
+--- +++ @@ -17,6 +17,5 @@ - Short description questions – 5 questions, 6 points each
+ - Case questions – 40 points in total
+ 
+-
+ ## 学习建议
+ 参考书籍：有，但不需要读；全靠 PPT 就够了。

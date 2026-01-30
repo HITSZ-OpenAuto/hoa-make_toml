@@ -1,0 +1,21 @@
+course_name = "计算机体系结构"
+repo_type = "normal"
+course_code = "COMP3011"
+
+[[lecturers]]
+name = "王强"
+  [[lecturers.reviews]]
+  content = "年轻教授。平时小测仅作为考勤依据，答题结果无需关注。"
+  author = { name = "", link = "", date = "" }
+
+[[course]]
+content = "没有作业，但是有课堂小测，需要限时扫码完成。"
+author = { name = "", link = "", date = "" }
+
+[[lab]]
+content = "全部是验证性实验，跟着指导书一步步做就行，除了环境配置以外没有什么难度。"
+author = { name = "", link = "", date = "" }
+
+[[exam]]
+content = "考一些基本概念和计算，听了老师的期末串讲就能过。"
+author = { name = "", link = "", date = "" }

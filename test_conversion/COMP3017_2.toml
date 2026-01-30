@@ -1,0 +1,20 @@
+course_name = "服务计算"
+repo_type = "normal"
+course_code = "COMP3017"
+
+[[lecturers]]
+name = "Joanna Siebert"
+
+
+[[online_resources]]
+title = "2023年春笔记"
+url = "https://github.com/xuanhao44/Service-Computing"
+description = """Service-Computing 课程笔记"""
+
+[[exam]]
+content = """形式：\n- Open book 开卷\n- Multiple choice questions – 10 questions, 3 points each 单选题！\n- Short description questions – 5 questions, 6 points each\n- Case questions – 40 points in total"""
+
+
+[[advice]]
+content = """参考书籍：有，但不需要读；全靠 PPT 就够了。"""
+

@@ -1,0 +1,38 @@
+转换稳定性测试汇总报告
+============================================================
+
+测试文件数: 5
+测试日期: 2026-01-30 18:03:15
+
+
+COMP2030.toml:
+  TOML 稳定: ✅
+  README 稳定: ❌
+  README 变化阶段: round1 -> round2
+
+COMP3053.toml:
+  TOML 稳定: ✅
+  README 稳定: ❌
+  README 变化阶段: round1 -> round2
+
+COMP3017.toml:
+  TOML 稳定: ✅
+  README 稳定: ❌
+  README 变化阶段: round1 -> round2
+
+WRIT0001.toml:
+  TOML 稳定: ✅
+  README 稳定: ❌
+  README 变化阶段: round1 -> round2
+
+COMP2052.toml:
+  TOML 稳定: ❌
+  README 稳定: ❌
+  TOML 变化阶段: original -> round1, round1 -> round2, round2 -> round3
+  README 变化阶段: round1 -> round2, round2 -> round3
+
+============================================================
+总体统计:
+  TOML 稳定: 4/5
+  README 稳定: 0/5
+  完全稳定: 0/5
